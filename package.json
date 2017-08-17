@@ -13,7 +13,6 @@
   },
   "homepage": "https://felixtriller.de",
   "dependencies": {
-    "bulma": "^0.4.2",
     "lightense-images": "^1.0.4"
   }
 }

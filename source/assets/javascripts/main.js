@@ -1,2 +1,2 @@
-//= require '_vendor/lightense'
+//= require 'lightense-images/lightense'
 //= require '_content'
