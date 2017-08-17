@@ -1,6 +1,7 @@
 language: ruby
 cache: bundler
 install:
+  - yarn install
   - bundle install
 script:
   - middleman build
