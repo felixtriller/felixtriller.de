@@ -1,0 +1,31 @@
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: $font-family-base;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-weight: $font-weight-base;
+  line-height: $line-height-base;
+  color: $body-color;
+  background-color: $body-bg;
+  padding: 0;
+
+  font-size: $font-size-root / 16 * 100%;
+
+  @media screen and (max-width: $sm-breakpoint) {
+    font-size: 100%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $link-color;
+}

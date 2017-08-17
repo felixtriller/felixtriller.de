@@ -1,0 +1,12 @@
+site: felixtriller.de
+url: https://felixtriller.de/
+title: Felix Triller
+author: Felix Triller
+description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+keywords: Lorem, ipsum, felix, triller
+
+twitter_card: summary
+twitter_author: '@felixtriller'
+twitter_description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+
+customize_by_frontmatter: true

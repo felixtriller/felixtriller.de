@@ -1,0 +1,38 @@
+---
+title: Journal
+pageable: true
+layout: page
+---
+<% if paginate && num_pages > 1 %>
+    <p>Page <%= page_number %> of <%= num_pages %></p>
+
+    <% if prev_page %>
+        <p><%= link_to 'Previous page', prev_page %></p>
+    <% end %>
+<% end %>
+
+<% page_articles.group_by { |article| article.date.strftime('%Y') }.each do |year, articles| %>
+    <h3><%= year %></h3>
+    <div class="article-list">
+      <% articles.each do |article| %>
+          <div class="article-list__item">
+            <div class="article-list__title">
+              <%= link_to article.title, article %>
+
+            </div>
+            <div class="article-list__date">
+              <%= article.date.strftime('%b %e') %>
+            </div>
+            <span class="article-list__readingtime" data-readingtime="<%= reading_time(article, format: :seconds) %>"
+                  title="~ <%= reading_time(article, format: :full) %> reading time">
+            </span>
+          </div>
+      <% end %>
+    </div>
+<% end %>
+
+<% if paginate %>
+    <% if next_page %>
+        <p><%= link_to 'Next page', next_page %></p>
+    <% end %>
+<% end %>

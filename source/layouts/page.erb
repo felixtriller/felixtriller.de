@@ -1,0 +1,9 @@
+<% wrap_layout :layout do %>
+    <article class="page">
+      <header class="page__header">
+        <h1 class="page__title"><%= current_page.data.title %></h1>
+      </header>
+
+      <%= yield %>
+    </article>
+<% end %>

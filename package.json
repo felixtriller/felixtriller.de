@@ -1,0 +1,19 @@
+{
+  "name": "felixtriller.de",
+  "version": "1.0.0",
+  "description": "A personal website by Felix Triller.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felixtriller/felixtriller.de.git"
+  },
+  "author": "Felix Triller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/felixtriller/felixtriller.de/issues"
+  },
+  "homepage": "https://felixtriller.de",
+  "dependencies": {
+    "bulma": "^0.4.2",
+    "lightense-images": "^1.0.4"
+  }
+}

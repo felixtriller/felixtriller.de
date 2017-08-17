@@ -1,0 +1,28 @@
+$font-family-sans-serif: "Fira Sans", sans-serif;
+$font-family-serif: Times, serif;
+$font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-family-base: $font-family-sans-serif;
+
+$font-size-ratio: 1.25;
+
+$font-size-root: 20;
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+$font-weight-base: $font-weight-normal;
+$line-height-base: 1.75;
+$font-size-small: 1em / $font-size-ratio;
+
+$headings-font-family: $font-family-sans-serif;
+$headings-font-weight: $font-weight-bold;
+$headings-line-height: 1.5;
+$headings-color: $base00;
+
+$body-bg: #fff;
+$body-color: $base01;
+
+$link-color: $base08;
+
+$content-width: 43.75rem;
+
+$lg-breakpoint: 60em;
+$sm-breakpoint: 43.75em;

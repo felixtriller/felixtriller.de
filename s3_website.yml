@@ -1,0 +1,28 @@
+index_document: index.html
+error_document: 404.html
+
+s3_id: <%= ENV['S3_ACCESS_KEY_ID'] %>
+s3_secret: <%= ENV['S3_SECRET_ACCESS_KEY'] %>
+s3_bucket: <%= ENV['S3_BUCKET'] %>
+
+max_age:
+  "*.css": 31_536_000
+  "*.js": 31_536_000
+  "*.svg": 31_536_000
+  "*.jpg": 31_536_000
+  "*.png": 31_536_000
+  "*": 300
+
+gzip:
+  - .html
+  - .css
+  - .md
+  - .svg
+  - .js
+  - .xml
+
+s3_endpoint: eu-central-1
+
+cloudfront_distribution_id: <%= ENV['CLOUDFRONT_DISTRIBUTION_ID'] %>
+cloudfront_invalidate_root: true
+cloudfront_wildcard_invalidation: true

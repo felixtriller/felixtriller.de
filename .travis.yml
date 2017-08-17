@@ -1,0 +1,15 @@
+language: ruby
+cache: bundler
+install:
+  - bundle install
+script:
+  - middleman build
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: rvm $TRAVIS_RUBY_VERSION do s3_website push
+  on:
+    branch: master
+notifications:
+  email:
+    on_success: always
