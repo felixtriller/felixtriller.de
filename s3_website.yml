@@ -5,6 +5,11 @@ s3_id: <%= ENV['S3_ACCESS_KEY_ID'] %>
 s3_secret: <%= ENV['S3_SECRET_ACCESS_KEY'] %>
 s3_bucket: <%= ENV['S3_BUCKET'] %>
 
+# https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Complete_list_of_MIME_types
+content_type:
+  "*.woff": font/woff
+  "*.woff2": font/woff2
+
 max_age:
   "*.css": 31_536_000
   "*.js": 31_536_000
