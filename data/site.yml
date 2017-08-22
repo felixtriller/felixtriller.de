@@ -9,4 +9,6 @@ twitter_card: summary
 twitter_author: '@felixtriller'
 twitter_description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
 
+google_analytics_id: UA-4778542-6
+
 customize_by_frontmatter: true
